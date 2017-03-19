@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.achenging.slidingtablayout.MainActivity">
+
+    <com.achenging.view.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showAsDivider="true"
+        app:dividerColor="@color/colorPrimary"
+        app:dividerThickness="1dp"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@android:color/black"
+        app:tabIndicatorThickness="2dp"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:bottomBorderThickness="1dp"
+        app:bottomBorderColor="@color/colorAccent"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+
+</LinearLayout>
